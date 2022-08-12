@@ -42,13 +42,35 @@ header {
   width: 50px;
   margin-right: 10px;
 }
+.logo-container:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
 
 nav > ol {
-  display: flex;
+  counter-reset: nav;
 }
 
 nav > ol > li {
   display: inline;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+li::before {
+  counter-increment: nav;
+  content: counter(nav) ".";
+  margin-right: 5px;
+  color: var(--text-accent);
 }
 
 /* ===Main=== */
