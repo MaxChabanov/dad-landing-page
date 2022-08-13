@@ -11,13 +11,49 @@
   --text-accent: hsl(16, 58%, 30%);
 }
 
-body {
-  background-color: hsl(0, 0%, 89%);
-}
-
 @font-face {
   font-family: "Rubik";
-  src: url(assets/fonts/Rubik-VariableFont_wght.ttf);
+  src: url(../assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: hsl(0, 0%, 89%);
+  font-family: "Rubik";
+}
+
+/* ===Text=== */
+.text {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+
+  margin-left: 5rem;
+  font-family: "Rubik";
+}
+.title {
+  font-size: var(--text-lg);
+  text-transform: uppercase;
+}
+
+.separator {
+  margin: 0 10px;
+  color: var(--text-accent);
+}
+
+.sub-title {
+  font-size: var(--text-md);
+  text-transform: capitalize;
+}
+
+.free-accent {
+  color: green;
+  font-size: 19px;
+  letter-spacing: 0.5px;
+}
+
+.viber-accent {
+  font-size: 20px;
+  color: #5238ff;
 }
 
 /* ===Header=== */
@@ -56,21 +92,21 @@ nav {
   align-items: center;
 }
 
-nav > ol {
+.nav-list {
   counter-reset: nav;
 }
 
-nav > ol > li {
+.nav-list-item {
   display: inline;
   margin-left: 5px;
   cursor: pointer;
 }
 
-li:hover {
+.nav-list-item:hover {
   text-decoration: underline;
 }
 
-li::before {
+.nav-list-item::before {
   counter-increment: nav;
   content: counter(nav) ".";
   margin-right: 5px;
@@ -90,6 +126,8 @@ section {
   align-items: center;
 }
 
+/* =Section one= */
+
 .background {
   width: 100%;
   height: 90%;
@@ -102,32 +140,9 @@ section {
   z-index: -1;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  max-width: 60%;
-
-  margin-left: 5rem;
-}
-
 .section-introduction {
   font-family: "Rubik";
   text-align: center;
-}
-
-.title {
-  font-size: var(--text-lg);
-  text-transform: uppercase;
-}
-
-.separator {
-  margin: 0 10px;
-  color: var(--text-accent);
-}
-
-.sub-title {
-  font-size: var(--text-md);
-  text-transform: capitalize;
 }
 
 .description {
@@ -137,23 +152,53 @@ section {
   align-self: center;
 }
 
-.free-accent {
-  color: green;
-  font-size: 19px;
-  letter-spacing: 0.5px;
-}
-
-.viber-accent {
-  font-size: 20px;
-  color: #5238ff;
-}
-
 .arrow-down {
   width: 50px;
   align-self: center;
   position: absolute;
   top: 90%;
   cursor: pointer;
+}
+
+/* =Section two= */
+.benefits-list {
+  margin-top: 30px;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-around;
+}
+.slider-product {
+  max-width: 30vw;
+  background: hsl(0, 0%, 93%);
+
+  padding: 1rem;
+  margin: 0 2rem;
+}
+
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-content > img {
+  width: 12rem;
+}
+.slider-content > h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.slider-content > .description {
+  max-width: none;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.slider-link {
+  font-size: 18px;
 }
 
 @media screen and (max-width: 1290px) {
