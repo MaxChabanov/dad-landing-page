@@ -136,7 +136,6 @@ section {
   position: absolute;
 
   object-fit: cover;
-  object-position: -12rem;
 
   image-rendering: pixelated;
   z-index: -1;
@@ -146,6 +145,7 @@ section {
   font-family: "Rubik";
   text-align: center;
   height: 80vh;
+  padding-top: 5rem;
 }
 
 .description {
@@ -164,6 +164,10 @@ section {
 }
 
 /* =Section two= */
+#section-second {
+  flex-direction: column;
+}
+
 .benefits-list {
   margin-top: 30px;
 }
@@ -200,20 +204,23 @@ section {
   max-height: 30rem;
 }
 
-.slider-nav {
+.slider-controls {
   position: absolute;
   width: 3.5rem;
+
+  top: calc(50% - 3.5rem);
   cursor: pointer;
   outline: none;
   z-index: 10;
 }
 
-#slider-nav-next {
+#slider-controls-next {
   left: calc(100% - 3.5rem);
   transform: rotate(-90deg);
 }
-#slider-nav-prev {
+#slider-controls-prev {
   transform: rotate(90deg);
+  left: 0;
 }
 
 .tns-outer {
@@ -225,7 +232,7 @@ section {
   width: 92vw;
 }
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1150px) {
   .background {
     object-position: -32rem;
   }

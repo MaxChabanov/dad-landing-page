@@ -11,9 +11,10 @@ var slider = tns({
   container: ".slider",
   nav: false,
   controlsContainer: "#controls",
-  prevButton: "#slider-nav-prev",
-  nextButton: "#slider-nav-next",
+  prevButton: "#slider-controls-prev",
+  nextButton: "#slider-controls-next",
   controlsPosition: "top",
+  mouseDrag: true,
 
   responsive: {
     1000: {
