@@ -1,12 +1,3 @@
-$(".arrow-down").click(() => {
-  $("html, body").animate(
-    {
-      scrollTop: $("#section-second").offset().top,
-    },
-    1000
-  );
-});
-
 var slider = tns({
   container: ".slider",
   nav: false,
