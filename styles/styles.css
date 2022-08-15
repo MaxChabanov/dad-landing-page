@@ -18,6 +18,10 @@
   src: url(../assets/fonts/Rubik-VariableFont_wght.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: hsl(0, 0%, 89%);
   font-family: "Rubik";
@@ -35,6 +39,7 @@ body {
 .title {
   font-size: var(--text-lg);
   text-transform: uppercase;
+  font-weight: 520;
 }
 
 .separator {
@@ -101,7 +106,13 @@ nav {
 .nav-list-item {
   display: inline;
   margin-left: 5px;
+
+  color: black;
   cursor: pointer;
+}
+
+.nav-list > a {
+  text-decoration: none;
 }
 
 .nav-list-item:hover {
@@ -155,6 +166,7 @@ section {
   font-size: 18px;
   max-width: 70%;
   align-self: center;
+  font-weight: normal;
 }
 
 /* =Section two= */
