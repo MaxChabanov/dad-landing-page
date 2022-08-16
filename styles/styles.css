@@ -238,8 +238,37 @@ section {
   width: 92vw;
 }
 
-@media screen and (max-width: 1150px) {
+/* =Section three= */
+.section-contacts {
+  flex-direction: column;
+}
+.section-contacts > .background {
+  object-position: 80%;
+}
+
+.contacts-container {
+  display: flex;
+
+  flex-direction: column;
+  align-self: self-start;
+  margin-left: 10rem;
+  margin-top: 2rem;
+}
+
+.contacts-container > h2 {
+  margin-bottom: 1rem;
+}
+
+.phone {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1250px) {
   .background {
-    object-position: -32rem;
+    object-position: 80%;
+  }
+  .section-contacts > .background {
+    object-position: 85%;
   }
 }
