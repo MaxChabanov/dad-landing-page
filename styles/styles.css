@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  /* user-select: none; */
+  user-select: none;
 }
 
 :root {
@@ -16,6 +16,7 @@
 @font-face {
   font-family: "Rubik";
   src: url(../assets/fonts/Rubik-VariableFont_wght.ttf);
+  font-display: swap;
 }
 
 html {
@@ -63,7 +64,7 @@ body {
 }
 
 .free-accent {
-  color: green;
+  color: #006f00;
   font-size: 19px;
   letter-spacing: 0.5px;
 }
