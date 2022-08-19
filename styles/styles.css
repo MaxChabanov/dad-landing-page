@@ -318,4 +318,7 @@ section {
   .mobile-separator {
     width: 90%;
   }
+  .nav-list {
+    display: none;
+  }
 }
