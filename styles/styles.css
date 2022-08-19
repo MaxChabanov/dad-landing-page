@@ -47,6 +47,16 @@ body {
   color: var(--text-accent);
 }
 
+.mobile-separator {
+  display: none;
+  width: 80%;
+  height: 4px;
+
+  border: none;
+  border-radius: 5px;
+  background-color: var(--text-accent);
+}
+
 .sub-title {
   font-size: var(--text-md);
   text-transform: capitalize;
@@ -270,5 +280,42 @@ section {
   }
   .section-contacts > .background {
     object-position: 85%;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  .text {
+    max-width: none;
+    margin-left: 0;
+  }
+  .background {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .separator {
+    display: none;
+  }
+  .mobile-separator {
+    display: block;
+  }
+  .description {
+    max-width: 95%;
+    margin-top: 35px;
+  }
+  .contacts-container {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mobile-separator {
+    width: 90%;
   }
 }
