@@ -326,7 +326,7 @@ section {
   .slider-controls {
     width: 2.5rem;
   }
-  #slider-controls-next {
+  /* #slider-controls-next {
     left: calc(100% - 2.7rem);
-  }
+  } */
 }
