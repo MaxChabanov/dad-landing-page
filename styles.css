@@ -203,7 +203,6 @@ section {
 .slide-image {
   width: 13rem;
   height: 18rem;
-  min-height: 18rem;
   border-radius: 5px;
 }
 
@@ -220,6 +219,11 @@ section {
   max-width: 90%;
   margin-top: 30px;
   text-align: center;
+}
+
+.slide-images-container {
+  display: flex;
+  gap: 2rem;
 }
 
 .slider-controls {
@@ -328,5 +332,15 @@ section {
   }
   #slider-controls-next {
     left: calc(100% - 2.7rem);
+  }
+  .slide-images-container {
+    gap: 0.5rem;
+  }
+  .slide-image {
+    width: 10rem;
+    height: 14rem;
+  }
+  .slide-content > .description {
+    margin-top: 15px;
   }
 }
