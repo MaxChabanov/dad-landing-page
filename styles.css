@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background-color: hsl(0, 0%, 89%);
+  background-color: hsl(0, 0%, 90%);
   font-family: "Rubik";
 }
 
@@ -213,11 +213,12 @@ section {
 
 .slide-link {
   font-size: 18px;
+  margin-top: 5px;
 }
 
 .slide-content > .description {
   max-width: 90%;
-  margin-top: 30px;
+  margin-top: 15px;
   text-align: center;
 }
 
@@ -339,8 +340,5 @@ section {
   .slide-image {
     width: 10rem;
     height: 14rem;
-  }
-  .slide-content > .description {
-    margin-top: 15px;
   }
 }
