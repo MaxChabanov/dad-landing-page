@@ -222,6 +222,11 @@ section {
   text-align: center;
 }
 
+.price {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
 .slide-images-container {
   display: flex;
   gap: 2rem;
