@@ -263,6 +263,7 @@ section {
 /* =Section three= */
 .section-contacts {
   flex-direction: column;
+  margin-top: 2rem;
 }
 .section-contacts > .background {
   object-position: 80%;
